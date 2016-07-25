@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Get Nylas Passport Strategy {% endblock %}
+
+{% block content %}
+<h1>Get Nylas Passport Strategy</h1>
+
+{% if !user %}
+	<p><a href="auth/nylas">Login</a></p>
+{% else %}
+	<p>Welcome {{user.email }}</p>
+	<div> {{ thread }} </div>
+
+{% endif %}
+{% endblock %}
